@@ -1,0 +1,299 @@
+/* Main Styling */
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    background: #f8fafc;
+    color: #222;
+}
+
+/* Navigation Styling */
+.navbarBrand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #1976d2 !important;
+    text-decoration: none;
+}
+
+.navbarNav .navLink {
+    font-weight: 500;
+    color: #1a237e !important;
+    transition: color 0.2s;
+}
+
+.navbarNav .navLink.active,
+.navbarNav .navLink:hover {
+    color: #1976d2 !important;
+}
+
+.navbarToggler {
+    border: 1px solid #1976d2;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Hero Section */
+.heroSection {
+    background: linear-gradient(135deg, #1976d2 0%, #1a237e 100%);
+    padding: 180px 0 100px 0;
+    color: #fff;
+}
+
+.heroSection h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.heroSection p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.heroSection .btn-primary {
+    background-color: #fff;
+    border: none;
+    color: #1976d2;
+}
+
+.heroSection .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+
+.heroSection .btn-outline-light:hover {
+    background-color: #fff;
+    color: #1976d2;
+}
+
+/* Section Titles */
+.sectionTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #1a237e;
+    letter-spacing: 0.02em;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+/* Service Cards */
+.serviceCard {
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(30, 34, 90, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #fff;
+    border: none;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+.serviceCard:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(30, 34, 90, 0.12);
+}
+
+.serviceIcon {
+    font-size: 2.5rem;
+    color: #1976d2;
+    margin-bottom: 1rem;
+}
+
+/* Background Utilities */
+.bgLightGray {
+    background-color: #f3f6fa !important;
+}
+
+/* Stats Counter */
+.counter {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1976d2;
+    margin-bottom: 0.5rem;
+}
+
+/* About Section */
+.aboutImage {
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(30, 34, 90, 0.10);
+}
+
+/* Process Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.timelineItem {
+    position: relative;
+    padding: 1.5rem 0 1.5rem 2rem;
+    border-left: 3px solid #1976d2;
+}
+
+.timelineItem::before {
+    content: '';
+    position: absolute;
+    left: -0.5rem;
+    top: 1.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: #1976d2;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.timeline-content h4 {
+    color: #1a237e;
+    margin-bottom: 0.5rem;
+}
+
+/* Testimonials */
+.testimonial {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(30, 34, 90, 0.08);
+    padding: 2rem 1.5rem;
+    min-height: 230px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.testimonial .content {
+    font-style: italic;
+    color: #444;
+}
+
+.testimonialAuthor {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.testimonialAuthor img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+.testimonialAuthor h5 {
+    color: #1a237e;
+}
+
+/* Tax Calculator */
+.taxCalculator {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(30, 34, 90, 0.05);
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+#taxCalculatorResult {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #f3f6fa;
+    display: none;
+}
+
+/* Footer */
+footer {
+    background: #1a237e;
+    color: #fff;
+    padding: 4rem 0 2rem;
+}
+
+footer h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 0.8rem;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background: #1976d2;
+    color: #fff;
+}
+
+.footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 991.98px) {
+    .heroSection {
+        padding: 150px 0 80px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .heroSection {
+        padding: 120px 0 60px;
+    }
+    
+    .counter {
+        font-size: 2rem;
+    }
+}
+
+/* Custom Styling for Tax Calculator */
+#taxCalculatorForm .form-control {
+    border: 1px solid #e0e7ef;
+    padding: 0.75rem 1rem;
+}
+
+#taxCalculatorForm .form-control:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 0.25rem rgba(25, 118, 210, 0.25);
+}
+
+/* Utility Classes */
+.btn-primary {
+    background-color: #1976d2;
+    border-color: #1976d2;
+}
+
+.btn-primary:hover {
+    background-color: #1565c0;
+    border-color: #1565c0;
+}
+
+.text-primary {
+    color: #1976d2 !important;
+}
+
+/* Animation for counters */
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.counter {
+    animation: countUp 1s ease-out forwards;
+}
