@@ -108,6 +108,7 @@ body {
     font-weight: 700;
     color: #1976d2;
     margin-bottom: 0.5rem;
+    animation: countUp 1s ease-out forwards;
 }
 
 /* About Section */
@@ -142,7 +143,7 @@ body {
     border: 2px solid #fff;
 }
 
-.timeline-content h4 {
+.timelineContent h4 {
     color: #1a237e;
     margin-bottom: 0.5rem;
 }
@@ -210,7 +211,7 @@ footer h5 {
     color: #fff;
 }
 
-.social-icon {
+.socialIcon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -223,18 +224,18 @@ footer h5 {
     transition: all 0.3s;
 }
 
-.social-icon:hover {
+.socialIcon:hover {
     background: #1976d2;
     color: #fff;
 }
 
-.footer-link {
+.footerLink {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     transition: color 0.2s;
 }
 
-.footer-link:hover {
+.footerLink:hover {
     color: #fff;
     text-decoration: none;
 }
@@ -250,7 +251,7 @@ footer h5 {
     .heroSection {
         padding: 120px 0 60px;
     }
-    
+
     .counter {
         font-size: 2rem;
     }
@@ -292,8 +293,4 @@ footer h5 {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-.counter {
-    animation: countUp 1s ease-out forwards;
 }
