@@ -122,20 +122,17 @@ p {
 /* Hero Section */
 .heroSection {
   background: linear-gradient(135deg, var(--primaryDark) 0%, var(--primaryMedium) 100%);
-  padding: 12rem 0 8rem;
+  height: 100svh;
+  height: 100vh;
+  min-height: 500px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   overflow: hidden;
-}
-
-.heroSection:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect x="0" y="0" width="100" height="100" fill="none"/><path d="M0 50 L50 0 L100 50 L50 100 Z" fill="%234A90C2" opacity="0.05"/></svg>');
-  background-size: 50px 50px;
+  text-align: center;
+  padding: 0;
 }
 
 .heroSection h1 {
@@ -152,6 +149,7 @@ p {
   opacity: 0.9;
   margin-bottom: 2.5rem;
 }
+
 
 .heroButtons {
   display: flex;
