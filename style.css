@@ -286,7 +286,7 @@ p {
 }
 
 .aboutImage {
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: var(--borderRadius);
   box-shadow: var(--boxShadow);
