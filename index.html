@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-
+<script src="script.js"></script>
         <link rel="stylesheet" href="style.css">
     </head>
 <body>
@@ -207,45 +207,70 @@
         </div>
     </section>
 
-    <!-- Process Timeline -->
-    <section id="process" class="py-5 bgLightGray">
+ <!-- Contact Section -->
+ <section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="sectionTitle">Get in Touch</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contactCard">
+                    <div class="contactInfo">
+                        <h4>Contact Information</h4>
+                        <p class="mb-4">Would you care for our services? Contact us by call or email today for a free consultation.</p>
+                        <div class="contactItems">
+                            <div class="contactItem">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h5>Address</h5>
+                                    <p>91 Sherwood Drive<br>Morganville, NJ 07751</p>
+                                </div>
+                            </div>
+                            <div class="contactItem">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h5>Phone</h5>
+                                    <p>(732)533-3183</p>
+                                </div>
+                            </div>
+                            <div class="contactItem">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p>ACherichello@taxsolutions.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Tax Calculator Section -->
+    <section class="py-5 bgLightGray">
         <div class="container">
-            <h2 class="sectionTitle">Our Tax Process</h2>
-            <div class="timeline">
-                <div class="timelineItem">
-                    <div class="timelineContent">
-                        <h4>Initial Consultation</h4>
-                        <p>We begin with a comprehensive review of your financial situation and tax needs.</p>
-                    </div>
-                </div>
-                <div class="timelineItem">
-                    <div class="timelineContent">
-                        <h4>Document Collection</h4>
-                        <p>We'll help you gather all necessary tax documents and information efficiently.</p>
-                    </div>
-                </div>
-                <div class="timelineItem">
-                    <div class="timelineContent">
-                        <h4>Tax Preparation</h4>
-                        <p>Our experts carefully prepare your tax return, identifying all deductions and credits.</p>
-                    </div>
-                </div>
-                <div class="timelineItem">
-                    <div class="timelineContent">
-                        <h4>Review & Approval</h4>
-                        <p>We review the completed return with you and address any questions or concerns.</p>
-                    </div>
-                </div>
-                <div class="timelineItem">
-                    <div class="timelineContent">
-                        <h4>Filing & Follow-up</h4>
-                        <p>We electronically file your return and provide you with a complete copy for your records.</p>
-                    </div>
-                </div>
-                <div class="timelineItem">
-                    <div class="timelineContent">
-                        <h4>Year-Round Support</h4>
-                        <p>We're available throughout the year for tax planning and questions, not just during tax season.</p>
+            <h2 class="sectionTitle">Estimate Your Tax Refund</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="taxCalculator">
+                        <form id="taxCalculatorForm">
+                            <div class="mb-3">
+                                <label for="income" class="form-label">Annual Income</label>
+                                <input type="number" class="form-control" id="income" placeholder="Enter your income">
+                            </div>
+                            <div class="mb-3">
+                                <label for="deductions" class="form-label">Deductions</label>
+                                <input type="number" class="form-control" id="deductions" placeholder="Enter deductions">
+                            </div>
+                            <div class="mb-3">
+                                <label for="credits" class="form-label">Tax Credits</label>
+                                <input type="number" class="form-control" id="credits" placeholder="Enter tax credits">
+                            </div>
+                            <button type="submit" class="btn btn-primary rounded-pill px-4">Calculate</button>
+                        </form>
+                        <div id="taxCalculatorResult" class="mt-4"></div>
                     </div>
                 </div>
             </div>
@@ -306,131 +331,6 @@
         </div>
     </section>
 
-    <!-- Tax Calculator Section -->
-    <section class="py-5 bgLightGray">
-        <div class="container">
-            <h2 class="sectionTitle">Estimate Your Tax Refund</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="taxCalculator">
-                        <form id="taxCalculatorForm">
-                            <div class="mb-3">
-                                <label for="income" class="form-label">Annual Income</label>
-                                <input type="number" class="form-control" id="income" placeholder="Enter your income">
-                            </div>
-                            <div class="mb-3">
-                                <label for="deductions" class="form-label">Deductions</label>
-                                <input type="number" class="form-control" id="deductions" placeholder="Enter deductions">
-                            </div>
-                            <div class="mb-3">
-                                <label for="credits" class="form-label">Tax Credits</label>
-                                <input type="number" class="form-control" id="credits" placeholder="Enter tax credits">
-                            </div>
-                            <button type="submit" class="btn btn-primary rounded-pill px-4">Calculate</button>
-                        </form>
-                        <div id="taxCalculatorResult" class="mt-4"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="sectionTitle">Get in Touch</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contactCard">
-                        <div class="contactInfo">
-                            <h4>Contact Information</h4>
-                            <p class="mb-4">Have questions about our tax services? Contact us today for a free consultation.</p>
-                            <div class="contactItems">
-                                <div class="contactItem">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <div>
-                                        <h5>Address</h5>
-                                        <p>91 Sherwood Drive<br>Morganville, NJ 07751</p>
-                                    </div>
-                                </div>
-                                <div class="contactItem">
-                                    <i class="fas fa-phone"></i>
-                                    <div>
-                                        <h5>Phone</h5>
-                                        <p>(732)533-3183</p>
-                                    </div>
-                                </div>
-                                <div class="contactItem">
-                                    <i class="fas fa-envelope"></i>
-                                    <div>
-                                        <h5>Email</h5>
-                                        <p>ACherichello@taxsolutions.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Appointment Section -->
-    <section id="appointment" class="py-5 bgLightGray">
-        <div class="container">
-            <h2 class="sectionTitle">Schedule a Consultation</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="appointmentForm">
-                        <form id="appointmentForm">
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" placeholder="Full Name" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <input type="email" class="form-control" placeholder="Email Address" required>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <input type="tel" class="form-control" placeholder="Phone Number" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <select class="form-select">
-                                        <option selected disabled>Select Service</option>
-                                        <option>Personal Tax Return</option>
-                                        <option>Tax Planning</option>
-                                        <option>Tax Resolution</option>
-                                        <option>Property Tax Services</option>
-                                        <option>Education Tax Credits</option>
-                                        <option>Self-Employment Taxes</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <input type="date" class="form-control" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <select class="form-select">
-                                        <option selected disabled>Preferred Time</option>
-                                        <option>Morning (9AM - 12PM)</option>
-                                        <option>Afternoon (12PM - 3PM)</option>
-                                        <option>Evening (3PM - 6PM)</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" rows="4" placeholder="Additional Information"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary rounded-pill px-4">Book Consultation</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer>
@@ -440,10 +340,7 @@
                     <h5 class="mb-3">Anthony's Tax Solutions</h5>
                     <p>Professional tax preparation and planning services to help you maximize your refunds and minimize your tax liability.</p>
                     <div class="mt-4 socialIcons">
-                        <a href="#" class="socialIcon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="socialIcon"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.linkedin.com/in/anthony-cherichello2962?original_referer=https%3A%2F%2Fwww.google.com%2F" class="socialIcon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="socialIcon"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 
@@ -471,7 +368,7 @@
                     <h5 class="mb-3">Contact Info</h5>
                     <ul class="list-unstyled footerContact">
                         <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>91 Sherwood Drive<br>Morganville, NJ 07751</li>
-                        <li class="mb-2"><i class="fas fa-phone me-2"></i>(732) 533-3183</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i>(732) 531-3183</li>
                         <li><i class="fas fa-envelope me-2"></i>ACherichello@taxsolutions.com</li>
                     </ul>
                 </div>
@@ -484,10 +381,10 @@
                 <div class="col-md-6 text-md-end">
                     <a href="#" class="footerLink me-3">Privacy Policy</a>
                     <a href="#" class="footerLink me-3">Terms of Service</a>
-                    <a href="#" class="footerLink">Sitemap</a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
