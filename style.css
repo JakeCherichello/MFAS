@@ -1,6 +1,5 @@
-/* CSS Variables for refined color palette */
 :root {
-  --primaryDark: #0D2C40;      /* Darker blue for headers and major elements */
+  --primaryDark: #0D2C40;      
   --primary: #1A4F76;           
   --primaryMedium: #2D6F9F;    
   --primaryLight: #4A90C2;     
@@ -17,7 +16,6 @@
   --transition: all 0.3s ease;
 }
 
-/* Base Styling */
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   background: var(--offWhite);
@@ -31,7 +29,7 @@ section {
   padding: 5rem 0;
 }
 
-/* Typography */
+
 h1, h2, h3, h4, h5, h6,
 .navbarBrand,
 .btn,
@@ -287,7 +285,7 @@ p {
 
 .aboutImage {
   width: 90%;
-  height: auto;
+  height: 700px;
   border-radius: var(--borderRadius);
   box-shadow: var(--boxShadow);
   transform: scale(1.1);
